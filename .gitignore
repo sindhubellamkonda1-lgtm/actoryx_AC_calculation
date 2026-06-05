@@ -1,3 +1,25 @@
+# =========================
+# Security (CRITICAL)
+# =========================
+.env
+*.env
+.env.*
+!.env.example
+
+# =========================
+# Python Backend
+# =========================
+__pycache__/
+venv/
+env/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# =========================
+# Node / Frontend
+# =========================
 # Logs
 logs
 *.log
@@ -7,15 +29,18 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependencies and Build
+node_modules/
+dist/
+dist-ssr/
 *.local
 
-# Editor directories and files
+# =========================
+# Editor directories and OS files
+# =========================
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
